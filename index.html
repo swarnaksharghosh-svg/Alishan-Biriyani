@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alishan Hotel &amp; Restaurant | Royal Dum Biryani in Kakdwip</title>
+  <meta name="description" content="Alishan Hotel & Restaurant, Kakdwip. Slow-cooked dum biryani, momos, kebabs, starters and value combos. Fresh, tasty, hygienic.">
+  <meta name="theme-color" content="#120806">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23120806' stroke='%23e8b04b' stroke-width='3'/%3E%3Ctext x='32' y='43' font-family='Georgia' font-size='32' fill='%23e8b04b' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader">
+    <div class="loader-inner">
+      <svg class="loader-handi" viewBox="0 0 140 140" aria-hidden="true">
+        <defs>
+          <linearGradient id="potG" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#f6d27a"/><stop offset="1" stop-color="#a8641c"/>
+          </linearGradient>
+        </defs>
+        <g class="l-steam" fill="none" stroke="#f6d27a" stroke-width="3" stroke-linecap="round">
+          <path d="M52 50 q-8 -10 0 -20 q8 -10 0 -20"/>
+          <path d="M70 46 q-8 -10 0 -20 q8 -10 0 -20"/>
+          <path d="M88 50 q-8 -10 0 -20 q8 -10 0 -20"/>
+        </g>
+        <ellipse cx="70" cy="62" rx="44" ry="7" fill="#f6d27a"/>
+        <path d="M28 64 Q24 118 70 120 Q116 118 112 64 Z" fill="url(#potG)"/>
+        <path d="M34 84 Q70 94 106 84" stroke="#7a1420" stroke-width="3" fill="none"/>
+        <circle cx="70" cy="54" r="6" fill="#e8b04b"/>
+      </svg>
+      <div class="loader-name">Alishan</div>
+      <div class="loader-sub">Hotel &amp; Restaurant</div>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="brand" aria-label="Alishan home">
+        <span class="brand-mark">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M14 22c0-4 3-7 6-6 1-3 7-3 8 0 3-1 6 2 6 6-1 2-2 3-3 3H17c-1 0-3-1-3-3z" fill="currentColor"/><rect x="17" y="27" width="14" height="5" rx="1" fill="currentColor"/><path d="M12 36h24" stroke="currentColor" stroke-width="1.5"/></svg>
+        </span>
+        <span class="brand-text"><b>Alishan</b><small>Hotel &amp; Restaurant</small></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#specials">Specials</a>
+        <a href="#menu">Menu</a>
+        <a href="#combos">Combos</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:+917501621505" class="btn btn-gold nav-cta-mobile">Call to Order</a>
+      </nav>
+      <a href="tel:+917501621505" class="btn btn-gold nav-cta">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z" fill="currentColor"/></svg>
+        Call to Order
+      </a>
+      <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="particles" id="particles" aria-hidden="true"></div>
+
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow" data-reveal>✦ Kakdwip's Royal Kitchen ✦</span>
+        <h1 class="hero-title">
+          <span class="script" data-reveal style="--d:.1s">Alishan</span>
+          <span class="line" data-reveal style="--d:.25s">The Royal Art of</span>
+          <span class="line shimmer" data-reveal style="--d:.4s">Dum Biryani</span>
+        </h1>
+        <p class="hero-text" data-reveal style="--d:.55s">
+          Fragrant long-grain rice, tender meat and hand-ground spices, sealed in a handi and slow-cooked on dum
+          until every grain carries the aroma. Fresh, tasty, hygienic: that's the Alishan promise.
+        </p>
+        <div class="hero-ctas" data-reveal style="--d:.7s">
+          <a href="#menu" class="btn btn-gold btn-lg">Explore Menu
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="https://wa.me/917501621505?text=Hi%20Alishan!%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener" class="btn btn-ghost btn-lg">Order on WhatsApp</a>
+        </div>
+        <div class="hero-stats" data-reveal style="--d:.85s">
+          <div><b><span data-count="80">0</span>+</b><small>Dishes &amp; Combos</small></div>
+          <div><b>₹<span data-count="50">0</span></b><small>Tiffin Biryani</small></div>
+          <div><b><span data-count="100">0</span>%</b><small>Fresh Ingredients</small></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" id="heroVisual">
+        <svg class="mandala" data-depth="10" viewBox="0 0 600 600" aria-hidden="true">
+          <g fill="none" stroke="currentColor">
+            <circle cx="300" cy="300" r="290" stroke-width="1" stroke-dasharray="2 10" class="ring r1"/>
+            <circle cx="300" cy="300" r="262" stroke-width="1.5" stroke-dasharray="40 8 4 8" class="ring r2"/>
+            <circle cx="300" cy="300" r="236" stroke-width="1" class="ring r3" stroke-opacity=".5"/>
+            <circle cx="300" cy="300" r="222" stroke-width="6" stroke-dasharray="1 14" stroke-linecap="round" class="ring r4"/>
+          </g>
+        </svg>
+        <div class="plate-glow"></div>
+        <div class="plate" data-depth="20">
+          <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=900&q=80" alt="Kolkata style biryani with egg and potato">
+        </div>
+        <svg class="steam" viewBox="0 0 200 160" aria-hidden="true">
+          <path d="M60 150 C 40 120, 80 100, 60 70 S 70 20, 55 0"/>
+          <path d="M100 150 C 80 120, 120 100, 100 70 S 110 20, 95 0"/>
+          <path d="M140 150 C 120 120, 160 100, 140 70 S 150 20, 135 0"/>
+        </svg>
+
+        <svg class="circle-text" viewBox="0 0 200 200" aria-hidden="true">
+          <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+          <text><textPath href="#circ">• FRESH • TASTY • HYGIENIC • SLOW COOKED ON DUM </textPath></text>
+          <circle cx="100" cy="100" r="44" class="ct-core"/>
+        </svg>
+        <span class="circle-text-label">Since<br><b>Day One</b></span>
+
+        <div class="float-card fc-1" data-depth="35">
+          <span class="fc-ico">★</span>
+          <div><small>Royal Feast</small><b>Mutton Biryani + Chap</b></div>
+          <em>₹360</em>
+        </div>
+        <div class="float-card fc-2" data-depth="45">
+          <span class="fc-ico fc-ico-red">♨</span>
+          <div><small>Bestseller</small><b>Chicken Biryani + Chap</b></div>
+          <em>₹160</em>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Mutton Biryani</span><i>✦</i><span>Chicken Biryani</span><i>✦</i><span>Aloo Biryani</span><i>✦</i>
+      <span>Reshmi Kabab</span><i>✦</i><span>Gondhoraj Fish Fry</span><i>✦</i><span>Chicken Cheese Momo</span><i>✦</i>
+      <span>Mutton Chap</span><i>✦</i><span>Seafood Combo</span><i>✦</i>
+      <span>Mutton Biryani</span><i>✦</i><span>Chicken Biryani</span><i>✦</i><span>Aloo Biryani</span><i>✦</i>
+      <span>Reshmi Kabab</span><i>✦</i><span>Gondhoraj Fish Fry</span><i>✦</i><span>Chicken Cheese Momo</span><i>✦</i>
+      <span>Mutton Chap</span><i>✦</i><span>Seafood Combo</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about">
+    <div class="container about-grid">
+      <div class="about-media" data-reveal="left">
+        <div class="am-main"><img src="https://images.unsplash.com/photo-1642821373181-696a54913e93?auto=format&fit=crop&w=900&q=80" alt="Biryani served in a clay handi" loading="lazy"></div>
+        <div class="am-sub"><img src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=600&q=75" alt="Whole spices in bowls" loading="lazy"></div>
+        <div class="am-badge">
+          <b><span data-count="24">0</span></b>
+          <small>Momo<br>Varieties</small>
+        </div>
+        <div class="am-frame"></div>
+      </div>
+
+      <div class="about-copy">
+        <span class="eyebrow" data-reveal>Our Story</span>
+        <h2 class="section-title" data-reveal style="--d:.1s">Where Every Grain <em>Tells a Royal Tale</em></h2>
+        <p data-reveal style="--d:.2s">
+          At <b>Alishan Hotel &amp; Restaurant</b>, biryani is a ritual, not a recipe. We marinate overnight, layer
+          long-grain rice with saffron and caramelised onions, seal the handi and let slow dum do the rest. The result is
+          rice that's fluffy, meat that falls off the bone, and an aroma you'll smell from the street.
+        </p>
+        <p data-reveal style="--d:.3s">
+          Beyond biryani, our kitchen serves sizzling kebabs, crispy Bengali starters, two dozen kinds of momo
+          and combos priced for every pocket, all cooked fresh near Sundarban Adarsha Vidyamandir, Kakdwip.
+        </p>
+        <ul class="features">
+          <li data-reveal style="--d:.35s">
+            <span class="f-ico"><svg viewBox="0 0 24 24"><path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 22v-8m0 3 3-3m-3 1-2-2" stroke="currentColor" stroke-width="1.6" fill="none"/></svg></span>
+            <div><b>Fresh Ingredients</b><small>Sourced daily, cooked to order</small></div>
+          </li>
+          <li data-reveal style="--d:.45s">
+            <span class="f-ico"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8.5 12l2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+            <div><b>Hygienic Kitchen</b><small>Clean prep, careful handling</small></div>
+          </li>
+          <li data-reveal style="--d:.55s">
+            <span class="f-ico"><svg viewBox="0 0 24 24"><path d="M3 11h18M5 11a7 7 0 0 0 14 0M12 4v3M8 5l1 2M16 5l-1 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M7 20h10" stroke="currentColor" stroke-width="1.6"/></svg></span>
+            <div><b>Authentic Dum</b><small>Sealed handi, slow flame</small></div>
+          </li>
+          <li data-reveal style="--d:.65s">
+            <span class="f-ico"><svg viewBox="0 0 24 24"><path d="M20 12l-8 8-9-9V3h8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="7.5" cy="7.5" r="1.5" fill="currentColor"/></svg></span>
+            <div><b>Best Price</b><small>Biryani from just ₹50</small></div>
+          </li>
+        </ul>
+        <div class="signature" data-reveal style="--d:.7s">
+          <span class="script">Good Food, Good Mood</span>
+          <small>The Alishan Family</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SIGNATURE SPECIALS ============ -->
+  <section class="section specials" id="specials">
+    <div class="ornament-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-reveal>Signature Specials</span>
+        <h2 class="section-title" data-reveal style="--d:.1s">Biryanis Worth <em>Coming Back For</em></h2>
+        <p data-reveal style="--d:.2s">Our most-loved plates, slow-cooked in small batches through the day.</p>
+      </div>
+
+      <div class="special-grid">
+        <article class="dish-card" data-reveal style="--d:.05s" data-tilt>
+          <div class="dc-img"><img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=700&q=75" alt="Mutton biryani" loading="lazy"><span class="dc-tag">Royal Feast</span></div>
+          <div class="dc-body">
+            <h3>Mutton Biryani + Mutton Chap</h3>
+            <p>Melt-in-mouth mutton on dum with fragrant rice, paired with rich mutton chap.</p>
+            <div class="dc-foot"><span class="price">₹360</span><a class="order-link" target="_blank" rel="noopener" href="https://wa.me/917501621505?text=Hi%20Alishan!%20I%20want%20to%20order%3A%20Mutton%20Biryani%20%2B%20Mutton%20Chap%20(%E2%82%B9360)">Order <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg></a></div>
+          </div>
+        </article>
+        <article class="dish-card" data-reveal style="--d:.15s" data-tilt>
+          <div class="dc-img"><img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?auto=format&fit=crop&w=700&q=75" alt="Chicken biryani" loading="lazy"><span class="dc-tag dc-tag-red">Bestseller</span></div>
+          <div class="dc-body">
+            <h3>Chicken Biryani + Chicken Chap</h3>
+            <p>Juicy chicken layered with saffron rice, served with our slow-cooked chicken chap.</p>
+            <div class="dc-foot"><span class="price">₹160</span><a class="order-link" target="_blank" rel="noopener" href="https://wa.me/917501621505?text=Hi%20Alishan!%20I%20want%20to%20order%3A%20Chicken%20Biryani%20%2B%20Chicken%20Chap%20(%E2%82%B9160)">Order <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg></a></div>
+          </div>
+        </article>
+        <article class="dish-card" data-reveal style="--d:.25s" data-tilt>
+          <div class="dc-img"><img src="https://images.unsplash.com/photo-1642821373181-696a54913e93?auto=format&fit=crop&w=700&q=75" alt="Biryani in handi" loading="lazy"><span class="dc-tag">Chef's Pick</span></div>
+          <div class="dc-body">
+            <h3>Mutton Biryani + Chicken Chap</h3>
+            <p>The best of both worlds: tender mutton biryani with a hearty chicken chap.</p>
+            <div class="dc-foot"><span class="price">₹260</span><a class="order-link" target="_blank" rel="noopener" href="https://wa.me/917501621505?text=Hi%20Alishan!%20I%20want%20to%20order%3A%20Mutton%20Biryani%20%2B%20Chicken%20Chap%20(%E2%82%B9260)">Order <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg></a></div>
+          </div>
+        </article>
+        <article class="dish-card" data-reveal style="--d:.35s" data-tilt>
+          <div class="dc-img"><img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=700&q=75" alt="Aloo biryani" loading="lazy"><span class="dc-tag dc-tag-green">Value Pick</span></div>
+          <div class="dc-body">
+            <h3>Aloo Biryani + Butter Chicken</h3>
+            <p>Kolkata-style aloo biryani with two pieces of creamy, buttery chicken.</p>
+            <div class="dc-foot"><span class="price">₹150</span><a class="order-link" target="_blank" rel="noopener" href="https://wa.me/917501621505?text=Hi%20Alishan!%20I%20want%20to%20order%3A%20Aloo%20Biryani%20%2B%20Butter%20Chicken%20(%E2%82%B9150)">Order <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg></a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROMO: TIFFIN BIRYANI ============ -->
+  <section class="promo">
+    <div class="container promo-inner">
+      <div class="promo-copy" data-reveal="left">
+        <span class="eyebrow">Everyday Deal</span>
+        <h2>Tiffin <span class="shimmer">Biryani</span></h2>
+        <p>A full, flavour-packed plate of biryani for lunch on the go. Hot, fresh and unbeatable value.</p>
+        <a href="tel:+917501621505" class="btn btn-gold btn-lg">Call &amp; Grab Yours</a>
+      </div>
+      <div class="promo-visual" data-reveal="right">
+        <div class="promo-img"><img src="https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?auto=format&fit=crop&w=800&q=75" alt="Plate of biryani" loading="lazy"></div>
+        <div class="burst">
+          <svg viewBox="0 0 200 200" aria-hidden="true"><path d="M100 0l14 26 28-12 2 30 30-2-12 28 26 14-26 14 12 28-30-2-2 30-28-12-14 26-14-26-28 12-2-30-30 2 12-28L0 100l26-14-12-28 30 2 2-30 28 12z"/></svg>
+          <span><small>Only</small><b>₹50</b></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DUM PROCESS ============ -->
+  <section class="section process">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-reveal>The Dum Ritual</span>
+        <h2 class="section-title" data-reveal style="--d:.1s">Four Steps to <em>Perfection</em></h2>
+      </div>
+      <div class="steps" id="steps">
+        <div class="steps-line"><span></span></div>
+        <div class="step" data-reveal style="--d:.1s">
+          <div class="step-ico"><svg viewBox="0 0 24 24"><path d="M4 14c0 4 3.5 7 8 7s8-3 8-7H4zM7 10c0-2 1-3 2-3M12 10c0-3 1-5 3-6M17 10c0-1 .5-2 1.5-2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <span class="step-no">01</span><h4>Marinate</h4><p>Meat rests overnight in yogurt and hand-ground whole spices.</p>
+        </div>
+        <div class="step" data-reveal style="--d:.25s">
+          <div class="step-ico"><svg viewBox="0 0 24 24"><path d="M3 8h18M4 12h16M5 16h14M7 20h10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <span class="step-no">02</span><h4>Layer</h4><p>Long-grain rice, saffron milk, fried onions and mint, layer by layer.</p>
+        </div>
+        <div class="step" data-reveal style="--d:.4s">
+          <div class="step-ico"><svg viewBox="0 0 24 24"><path d="M4 10h16l-1.5 9a2 2 0 0 1-2 1.7h-9a2 2 0 0 1-2-1.7zM3 10h18M12 4v3M9 7h6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <span class="step-no">03</span><h4>Seal</h4><p>The handi is sealed so not a whisper of aroma escapes.</p>
+        </div>
+        <div class="step" data-reveal style="--d:.55s">
+          <div class="step-ico"><svg viewBox="0 0 24 24"><path d="M12 22c4 0 7-3 7-7 0-5-5-7-4-13-3 2-5 5-5 8-1-1-2-2-2-4-2 2-3 5-3 9 0 4 3 7 7 7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+          <span class="step-no">04</span><h4>Dum</h4><p>Slow-cooked on a low flame until rice and meat become one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section class="section menu" id="menu">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-reveal>Our Menu</span>
+        <h2 class="section-title" data-reveal style="--d:.1s">Crafted With <em>Love &amp; Spice</em></h2>
+        <p data-reveal style="--d:.2s">Biryani, starters, momos and more. Tap a category to explore.</p>
+      </div>
+      <div class="menu-tabs" id="menuTabs" role="tablist" data-reveal style="--d:.25s"></div>
+      <div class="menu-board" id="menuBoard" data-reveal style="--d:.3s"></div>
+      <p class="menu-note"><span class="veg-dot"></span> Veg &nbsp; <span class="veg-dot nv"></span> Non-Veg &nbsp;·&nbsp; pcs = pieces &nbsp;·&nbsp; Prices in ₹, inclusive of all taxes</p>
+    </div>
+  </section>
+
+  <!-- ============ COUNTERS ============ -->
+  <section class="counters">
+    <div class="container counter-grid">
+      <div class="counter" data-reveal><b><span data-count="7">0</span></b><small>Biryani Plates</small></div>
+      <div class="counter" data-reveal style="--d:.1s"><b><span data-count="21">0</span></b><small>Starters &amp; Kebabs</small></div>
+      <div class="counter" data-reveal style="--d:.2s"><b><span data-count="24">0</span></b><small>Kinds of Momo</small></div>
+      <div class="counter" data-reveal style="--d:.3s"><b><span data-count="24">0</span></b><small>Combo Deals</small></div>
+    </div>
+  </section>
+
+  <!-- ============ COMBOS ============ -->
+  <section class="section combos" id="combos">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-reveal>Best Value</span>
+        <h2 class="section-title" data-reveal style="--d:.1s">Combo <em>Offers</em></h2>
+        <p data-reveal style="--d:.2s">Full meals, priced right. Best food, best taste, best combos.</p>
+      </div>
+      <div class="combo-grid" id="comboGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-reveal>Gallery</span>
+        <h2 class="section-title" data-reveal style="--d:.1s">A Feast <em>For the Eyes</em></h2>
+      </div>
+      <div class="gallery-grid">
+        <figure class="g-item g-tall" data-reveal><img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=700&q=75" alt="Biryani" loading="lazy"><figcaption>Dum Biryani</figcaption></figure>
+        <figure class="g-item" data-reveal style="--d:.1s"><img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=700&q=75" alt="Kebabs on grill" loading="lazy"><figcaption>Tikka &amp; Reshmi Kabab</figcaption></figure>
+        <figure class="g-item" data-reveal style="--d:.2s"><img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=700&q=75" alt="Momos" loading="lazy"><figcaption>Steamed Momos</figcaption></figure>
+        <figure class="g-item g-wide" data-reveal style="--d:.1s"><img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=900&q=75" alt="Curries and rice" loading="lazy"><figcaption>Kasa &amp; Curries</figcaption></figure>
+        <figure class="g-item" data-reveal style="--d:.2s"><img src="https://images.unsplash.com/photo-1625220194771-7ebdea0b70b9?auto=format&fit=crop&w=700&q=75" alt="Fried momos" loading="lazy"><figcaption>Fried &amp; Pan Fried Momo</figcaption></figure>
+        <figure class="g-item" data-reveal style="--d:.3s"><img src="https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?auto=format&fit=crop&w=700&q=75" alt="Chicken" loading="lazy"><figcaption>Chicken Chap</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta">
+    <div class="container cta-inner" data-reveal>
+      <span class="script">Hungry?</span>
+      <h2>Your Biryani Is Just a Call Away</h2>
+      <div class="cta-phones">
+        <a href="tel:+917501621505" class="btn btn-gold btn-lg"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z" fill="currentColor"/></svg>75016 21505</a>
+        <a href="tel:+917797488339" class="btn btn-ghost btn-lg"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z" fill="currentColor"/></svg>77974 88339</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <span class="eyebrow" data-reveal>Visit Us</span>
+        <h2 class="section-title" data-reveal style="--d:.1s">Come Hungry, <em>Leave Happy</em></h2>
+        <div class="info-card" data-reveal style="--d:.2s">
+          <span class="f-ico"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <div><b>Address</b><p>Near Sundarban Adarsha Vidyamandir,<br>Kakdwip, South 24 Parganas, West Bengal</p></div>
+        </div>
+        <div class="info-card" data-reveal style="--d:.3s">
+          <span class="f-ico"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <div><b>Call to Order</b><p><a href="tel:+917501621505">+91 75016 21505</a><br><a href="tel:+917797488339">+91 77974 88339</a></p></div>
+        </div>
+        <div class="info-card" data-reveal style="--d:.4s">
+          <span class="f-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <div><b>Opening Hours</b><p>Open Daily · 11:00 AM – 11:00 PM</p></div>
+        </div>
+      </div>
+      <div class="map-wrap" data-reveal="right">
+        <iframe title="Alishan Hotel & Restaurant location" src="https://www.google.com/maps?q=Sundarban+Adarsha+Vidyamandir,+Kakdwip&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <div class="script">Alishan</div>
+        <small>Hotel &amp; Restaurant</small>
+        <p>Delicious food, happy mood. Fresh ingredients, great taste, every single day.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8.5V7c0-.8.5-1 1-1h2V2.5h-3C11 2.5 10 4.5 10 7v1.5H7.5V12H10v9.5h4V12h2.8l.5-3.5z" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg></a>
+          <a href="https://wa.me/917501621505" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M3.5 20.5l1.3-4.2A8.6 8.6 0 1 1 8 19.3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5c0 3 2.5 6 6 6.5l1-1.5-2-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2z" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <a href="#about">About Us</a><a href="#specials">Specials</a><a href="#menu">Menu</a><a href="#combos">Combo Offers</a><a href="#gallery">Gallery</a>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <p>Near Sundarban Adarsha Vidyamandir, Kakdwip, South 24 Parganas</p>
+        <a href="tel:+917501621505">+91 75016 21505</a>
+        <a href="tel:+917797488339">+91 77974 88339</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <span>© <span id="year">2026</span> Alishan Hotel &amp; Restaurant. All rights reserved.</span>
+      <span>Good Food · Good Life</span>
+    </div>
+  </footer>
+
+  <!-- Mobile bottom action bar -->
+  <nav class="mbar" aria-label="Quick actions">
+    <a href="tel:+917501621505">
+      <svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z" fill="currentColor"/></svg>
+      <span>Call</span>
+    </a>
+    <a href="#menu" class="mbar-main">
+      <svg viewBox="0 0 24 24"><path d="M3 11h18M5 11a7 7 0 0 0 14 0M12 4v3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M7 20h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span>Menu</span>
+    </a>
+    <a href="https://wa.me/917501621505?text=Hi%20Alishan!%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M3.5 20.5l1.3-4.2A8.6 8.6 0 1 1 8 19.3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5c0 3 2.5 6 6 6.5l1-1.5-2-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2z" fill="currentColor"/></svg>
+      <span>WhatsApp</span>
+    </a>
+  </nav>
+
+  <!-- Floating actions -->
+  <a href="https://wa.me/917501621505?text=Hi%20Alishan!%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener" class="fab-wa" aria-label="Order on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M3.5 20.5l1.3-4.2A8.6 8.6 0 1 1 8 19.3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5c0 3 2.5 6 6 6.5l1-1.5-2-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2z" fill="currentColor"/></svg>
+  </a>
+  <button class="to-top" id="toTop" aria-label="Back to top"><svg viewBox="0 0 24 24"><path d="M6 15l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
